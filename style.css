@@ -1,0 +1,159 @@
+body {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    background: #000;
+    cursor: crosshair;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header {
+    top: 42%;
+}
+
+.disable-selection {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+h1::after {
+    content: 'V.101';
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+/* ... (the rest of your styles) ... */
+
+/* Updated Join Waitlist Button Styles */
+.btn-dark {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #2c3e50, #3498db);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.5s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-dark:hover, .btn-dark:focus {
+    background-image: linear-gradient(to right, #3498db, #2c3e50);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Email Input Section */
+.email-input-section {
+    display: none;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.email-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 250px; /* Give it a fixed width for aesthetics */
+}
+
+.email-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #555;
+    box-shadow: none;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 30px; /* Rounded to match the input field */
+    background-color: #AEDFF7; /* Pastel blue */
+    color: #333; /* Dark text to contrast the light button */
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s;
+    font-size: 16px; /* Matching the email input size */
+}
+
+.submit-btn:hover, .submit-btn:focus {
+    background-color: #8ECFEA; /* Slightly darker shade on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+font-family: inherit;
+-webkit-box-align: center;
+align-items: center;
+background: black;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 60px;
+cursor: pointer;
+display: flex;
+gap: 16px;
+-webkit-box-pack: justify;
+justify-content: space-between;
+min-width: 0px;
+padding: 19px 75px;
+
+}
+
+.button {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    line-height: inherit;
+    box-sizing: border-box;
+    border: 0 solid #d8dae3;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    z-index: 30;
+    display: flex;
+    height: 2.5rem;
+    flex-direction: row;
+    align-items: center;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+
+/* CSS Custom properties (variables) */
+:root {
+    --dark-hue: 235;
+    --light-hue: 235;
+    /* ... (include all other variables here) ... */
+    --tw-text-opacity: 1;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    /* ... (include all other variables here) ... */
+}
+
+/* If you have an animation called fadeIn, include it too */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
